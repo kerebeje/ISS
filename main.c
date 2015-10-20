@@ -22,7 +22,7 @@ int main( int argc, const char * argv[] )
 	nbInstr = stringToLines(fileContent, fileExtract);
 	printf("%d instructions\n",nbInstr);
 	for(count=0;count<nbInstr;count++)
-	{
+	{ 
 		printf("[%d]",count);
 		printf("[@%lx]",(long unsigned)&fileExtract[count]);
 		printf("[%d] : ",(int)strlen(fileExtract[count]));
